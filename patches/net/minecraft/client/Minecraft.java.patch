@@ -352,6 +352,14 @@
                  if (integratedserver != null) {
                      this.profiler.push("waitForServer");
  
+@@ -2175,6 +_,7 @@
+     }
+ 
+     private void updateLevelInEngines(@Nullable ClientLevel p_91325_) {
++        net.neoforged.neoforge.client.cached.CacheableBERenderingPipeline.updateLevel(p_91325_);
+         this.levelRenderer.setLevel(p_91325_);
+         this.particleEngine.setLevel(p_91325_);
+         this.blockEntityRenderDispatcher.setLevel(p_91325_);
 @@ -2258,6 +_,7 @@
  
      private void pickBlock() {
