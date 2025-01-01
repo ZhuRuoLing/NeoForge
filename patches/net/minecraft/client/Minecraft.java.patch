@@ -356,7 +356,7 @@
      }
  
      private void updateLevelInEngines(@Nullable ClientLevel p_91325_) {
-+        net.neoforged.neoforge.client.cached.CacheableBERenderingPipeline.updateLevel(p_91325_);
++        net.neoforged.neoforge.client.ClientHooks.onUpdateLevel(p_91325_);
          this.levelRenderer.setLevel(p_91325_);
          this.particleEngine.setLevel(p_91325_);
          this.blockEntityRenderDispatcher.setLevel(p_91325_);
